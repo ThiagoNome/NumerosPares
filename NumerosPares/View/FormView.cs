@@ -21,13 +21,13 @@ namespace NumerosPares.View
 
         private void resultado_Click(object sender, EventArgs e)
         {
-            if (valores.Text != string.Empty)
-            {
-                int valor = Convert.ToInt32(valores.Text);
-                string resultado = par.Calcular(valor);
-                tx_resultado.Text = (resultado.ToString());
-            }
-            
+           
+        }
+
+        private void calcular_Click(object sender, EventArgs e)
+        {
+            int valor = Convert.ToInt32(valores.Text);
+            tx_resultado.Text = par.Calcular(valor);
         }
     }
 }

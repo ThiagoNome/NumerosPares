@@ -10,16 +10,16 @@ namespace NumerosPares.Controller
     {
         public string Calcular(int valor)
         {
-            string numeropar = "";
-            if (valor % 2 == 0)
-            {
-                numeropar = "Seu número " + valor + " é Par";
-            }
-            else
-            {
-                numeropar = "Seu número " + valor + " é Ímpar";
-            }
-            return numeropar;
+             string numero = "";
+             if (valor % 2 == 0)
+             {
+                 numero = "Seu número " + valor + " é Par";
+             }
+             else
+             {
+                 numero = "Seu número " + valor + " é Ímpar";
+             }
+             return numero;
         }
     }
 }
